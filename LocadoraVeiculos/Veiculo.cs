@@ -48,7 +48,7 @@ namespace LocadoraVeiculos
 
         public virtual double CalcularAluguel(int dias)
         {
-            double totalAluguel = 0;
+            double totalAluguel = BaseDiarioAluguel * dias;
             return totalAluguel;
         }
     }

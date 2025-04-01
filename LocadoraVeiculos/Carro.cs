@@ -13,8 +13,8 @@ namespace LocadoraVeiculos
         }
         public override double CalcularAluguel(int dias)
         {
-            double totalAluguel = BaseDiarioAluguel * dias;
-            return totalAluguel;
+            
+            return base.CalcularAluguel(dias);
             
         }
     }
