@@ -1,4 +1,5 @@
 ﻿using System;
+using Internal;
 namespace LocadoraVeiculos
 {
     internal class Program
@@ -30,6 +31,7 @@ namespace LocadoraVeiculos
                     break;
 
                 case 2:
+                    if(veiculos.Count > 0) 
                     ExibirVeiculos(veiculos);
                     break;
 
@@ -55,6 +57,9 @@ namespace LocadoraVeiculos
 
             Console.WriteLine("Qual o valor base diário de aluguel desse veículo?");
             double baseDiarioAluguel = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Por quantos dias esse veículo será alugado?");
+            int dias = int.Parse(Console.ReadLine());
 
             Veiculo v = new Veiculo(modelo,marca,ano,baseDiarioAluguel);
 
@@ -101,6 +106,8 @@ namespace LocadoraVeiculos
                 Console.WriteLine($"Modelo: {v.Modelo}");
                 Console.WriteLine($"Ano: {v.Ano}");
             }
+            Console.WriteLine("Enter para continuar...");
+            EscolhaOperacao(veiculos);
         }
     }
 }

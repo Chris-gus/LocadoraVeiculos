@@ -40,10 +40,10 @@ namespace LocadoraVeiculos
 
         public Veiculo(string modelo, string marca, int ano, double baseDiarioAluguel) 
         {
-            modelo = Modelo;
-            marca = Marca;
-            ano = Ano;
-            baseDiarioAluguel = BaseDiarioAluguel;
+            Modelo = modelo;
+            Marca = marca;
+            Ano = ano;
+            BaseDiarioAluguel = baseDiarioAluguel;
         }
 
         public virtual double CalcularAluguel(int dias)
