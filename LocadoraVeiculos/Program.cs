@@ -1,5 +1,4 @@
 ﻿using System;
-using Internal;
 namespace LocadoraVeiculos
 {
     internal class Program
@@ -7,10 +6,11 @@ namespace LocadoraVeiculos
         static void Main(string[] args)
         {
            List<Veiculo> veiculos = new List<Veiculo>();
-           EscolhaOperacao(veiculos);
+           int dias = 0;
+           EscolhaOperacao(veiculos,dias);
         }
 
-        static void EscolhaOperacao(List<Veiculo> veiculos)
+        static void EscolhaOperacao(List<Veiculo> veiculos, int dias)
         {
             Console.Clear();
             Console.WriteLine("Escolha o que você deseja fazer:");
@@ -32,7 +32,7 @@ namespace LocadoraVeiculos
 
                 case 2:
                     if(veiculos.Count > 0) 
-                    ExibirVeiculos(veiculos);
+                    ExibirVeiculos(veiculos,dias);
                     break;
 
                 default:
@@ -63,9 +63,9 @@ namespace LocadoraVeiculos
 
             Veiculo v = new Veiculo(modelo,marca,ano,baseDiarioAluguel);
 
-            EscolhaTipo(v,veiculos);
+            EscolhaTipo(v,veiculos,dias);
         }
-        static void EscolhaTipo(Veiculo v, List<Veiculo> veiculos)
+        static void EscolhaTipo(Veiculo v, List<Veiculo> veiculos,int dias)
         {
             Console.WriteLine("Que tipo de veículo você deseja? ");
             Console.WriteLine("1 - Carro");
@@ -79,35 +79,38 @@ namespace LocadoraVeiculos
                 case 1:
                     Veiculo cr = new Carro(v.Modelo, v.Marca, v.Ano, v.BaseDiarioAluguel);
                     veiculos.Add(cr);
-                    EscolhaOperacao(veiculos);
+                    EscolhaOperacao(veiculos,dias);
                     break;
                 case 2:
                     Veiculo m = new Moto(v.Modelo, v.Marca, v.Ano, v.BaseDiarioAluguel);
                     veiculos.Add(m);
-                    EscolhaOperacao(veiculos);
+                    EscolhaOperacao(veiculos,dias);
                     break;
 
                 case 3:
                     Veiculo cm = new Caminhao(v.Modelo, v.Marca, v.Ano, v.BaseDiarioAluguel);
                     veiculos.Add(cm);
-                    EscolhaOperacao(veiculos);
+                    EscolhaOperacao(veiculos,dias);
                     break;
 
                 default:
                     throw new Exception("Insira um valor válido.");
             }
         }
-        static void ExibirVeiculos(List<Veiculo> veiculos)
+        static void ExibirVeiculos(List<Veiculo> veiculos,int dias)
         {
             Console.Clear();
             foreach (Veiculo v in veiculos)
             {
+                Console.WriteLine($"Dias Alugados: {dias}");
                 Console.WriteLine($"Marca: {v.Marca}");
                 Console.WriteLine($"Modelo: {v.Modelo}");
                 Console.WriteLine($"Ano: {v.Ano}");
+                Console.WriteLine($"Preço total do aluguel: {v.CalcularAluguel(dias)}\n");
             }
             Console.WriteLine("Enter para continuar...");
-            EscolhaOperacao(veiculos);
+            Console.ReadKey();
+            EscolhaOperacao(veiculos,dias);
         }
     }
 }
