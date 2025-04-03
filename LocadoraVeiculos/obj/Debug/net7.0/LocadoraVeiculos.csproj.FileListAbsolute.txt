@@ -1,0 +1,15 @@
+/home/marshaley/LocadoraVeiculos/LocadoraVeiculos/obj/Debug/net7.0/LocadoraVeiculos.GeneratedMSBuildEditorConfig.editorconfig
+/home/marshaley/LocadoraVeiculos/LocadoraVeiculos/obj/Debug/net7.0/LocadoraVeiculos.AssemblyInfoInputs.cache
+/home/marshaley/LocadoraVeiculos/LocadoraVeiculos/obj/Debug/net7.0/LocadoraVeiculos.AssemblyInfo.cs
+/home/marshaley/LocadoraVeiculos/LocadoraVeiculos/obj/Debug/net7.0/LocadoraVeiculos.csproj.CoreCompileInputs.cache
+/home/marshaley/LocadoraVeiculos/LocadoraVeiculos/obj/Debug/net7.0/LocadoraVeiculos.sourcelink.json
+/home/marshaley/LocadoraVeiculos/LocadoraVeiculos/bin/Debug/net7.0/LocadoraVeiculos
+/home/marshaley/LocadoraVeiculos/LocadoraVeiculos/bin/Debug/net7.0/LocadoraVeiculos.deps.json
+/home/marshaley/LocadoraVeiculos/LocadoraVeiculos/bin/Debug/net7.0/LocadoraVeiculos.runtimeconfig.json
+/home/marshaley/LocadoraVeiculos/LocadoraVeiculos/bin/Debug/net7.0/LocadoraVeiculos.dll
+/home/marshaley/LocadoraVeiculos/LocadoraVeiculos/bin/Debug/net7.0/LocadoraVeiculos.pdb
+/home/marshaley/LocadoraVeiculos/LocadoraVeiculos/obj/Debug/net7.0/LocadoraVeiculos.dll
+/home/marshaley/LocadoraVeiculos/LocadoraVeiculos/obj/Debug/net7.0/refint/LocadoraVeiculos.dll
+/home/marshaley/LocadoraVeiculos/LocadoraVeiculos/obj/Debug/net7.0/LocadoraVeiculos.pdb
+/home/marshaley/LocadoraVeiculos/LocadoraVeiculos/obj/Debug/net7.0/LocadoraVeiculos.genruntimeconfig.cache
+/home/marshaley/LocadoraVeiculos/LocadoraVeiculos/obj/Debug/net7.0/ref/LocadoraVeiculos.dll

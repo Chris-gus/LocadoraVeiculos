@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "laf+SIzR043IDyV2mPv444Ge3pF4tDYnpwsNH7ovm2EtMDo1iKXH3xmDJwxRBKkg0ruYTfqyNeYJefqtz27LEA==",
+  "dgSpecHash": "ksUp3Lpk5Zw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\christopher.oliveir\\source\\repos\\LocadoraVeiculos\\LocadoraVeiculos\\LocadoraVeiculos.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/marshaley/LocadoraVeiculos/LocadoraVeiculos/LocadoraVeiculos.csproj",
+  "expectedPackageFiles": [
+    "/home/marshaley/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.3/microsoft.aspnetcore.app.ref.9.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
