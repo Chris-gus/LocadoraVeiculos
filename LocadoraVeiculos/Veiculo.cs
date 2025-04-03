@@ -51,5 +51,7 @@ namespace LocadoraVeiculos
             double totalAluguel = BaseDiarioAluguel * dias;
             return totalAluguel;
         }
+
+
     }
 }
