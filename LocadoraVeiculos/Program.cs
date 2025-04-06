@@ -12,6 +12,7 @@ namespace LocadoraVeiculos
 
         static void EscolhaOperacao(List<Veiculo> veiculos, int dias)
         {
+            try{
             Console.Clear();
             Console.WriteLine("Escolha o que você deseja fazer:");
             Console.WriteLine("1- Cadastrar novo veículo.");
@@ -39,7 +40,12 @@ namespace LocadoraVeiculos
                     throw new Exception("Insira um valor válido");
 
             }
-
+            }
+            catch(Exception ex)
+            {
+                TratarExcecao(ex);
+                EscolhaOperacao(veiculos,dias);
+            }
 
         }
         
@@ -67,6 +73,7 @@ namespace LocadoraVeiculos
         }
         static void EscolhaTipo(Veiculo v, List<Veiculo> veiculos,int dias)
         {
+            try{
             Console.WriteLine("Que tipo de veículo você deseja? ");
             Console.WriteLine("1 - Carro");
             Console.WriteLine("2 - Moto");
@@ -96,6 +103,11 @@ namespace LocadoraVeiculos
                 default:
                     throw new Exception("Insira um valor válido.");
             }
+            }
+            catch(Exception ex){
+                TratarExcecao(ex);
+                EscolhaTipo(v,veiculos,dias);
+            }
         }
         static void ExibirVeiculos(List<Veiculo> veiculos,int dias)
         {
@@ -111,6 +123,12 @@ namespace LocadoraVeiculos
             Console.WriteLine("Enter para continuar...");
             Console.ReadKey();
             EscolhaOperacao(veiculos,dias);
+        }
+        static void TratarExcecao(Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+            Console.WriteLine("Enter para continuar...");
+            Console.ReadKey();
         }
     }
 }
